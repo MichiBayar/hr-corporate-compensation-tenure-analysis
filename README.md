@@ -24,7 +24,7 @@ The goal of this project was to act as a Corporate Human Resources & People Ops 
 
 ## Results
 
-### 1. Establishing Organizational Scale
+### Establishing Organizational Scale
 To understand the baseline scale of the company's workforce, distinct aggregate queries were executed to identify total career history vs. active operational staff.
 * **Total Employees (Historical Archive):** There are **300,024** unique employee profiles on record.
 * **Total Departments:** There are **9** distinct functional business units.
@@ -37,7 +37,7 @@ FROM dept_emp
 WHERE to_date = '9999-01-01';
 ```
 
-### 2. Department Headcount & Payroll Map
+### Department Headcount & Payroll Map
 By joining active department records with active pay schedules, we mapped headcounts and average salaries to identify where corporate payroll capital is concentrated.
 
 <img width="422" height="482" alt="Screenshot 2026-07-14 at 11 45 10 PM" src="https://github.com/user-attachments/assets/30a3575d-7e11-44ae-8d54-999087fd461d" />
@@ -50,7 +50,7 @@ By joining active department records with active pay schedules, we mapped headco
 
 
 
-### 3. Top Earning Employees
+### Top Earning Employees
 To identify outliers and high-value individual contributors, active title and salary tables were joined to extract the top 20 highest-compensated individuals currently in the organization.
 
 ```sql
@@ -75,14 +75,14 @@ LIMIT 20;
 
 <img width="425" height="506" alt="Screenshot 2026-07-14 at 11 45 29 PM" src="https://github.com/user-attachments/assets/778fa5e6-5d74-4e0a-b8c3-b0ed126d1ef6" />
 
-### 4. Management Continuity Audit
+### Management Continuity Audit
 A critical governance and operational risk check was run to identify any department currently operating without a manager assigned to active records.
 
 **Result:** 0 departments currently lack an active manager. Every single business unit has a designated leader assigned on active record (to_date = '9999-01-01'), ensuring structural alignment.
 
 <img width="171" height="69" alt="Screenshot 2026-07-14 at 11 45 42 PM" src="https://github.com/user-attachments/assets/ef7fde55-bc69-4016-a1aa-834b7266aa00" />
 
-### 5. Evaluating the "Legacy Cohort" Retention Risk
+### Evaluating the "Legacy Cohort" Retention Risk
 To test the hypothesis that specific departments are top-heavy with aging legacy talent, we defined "Long-Tenured" employees as any active staff member hired prior to January 1st, 1987.
 
 ```sql
