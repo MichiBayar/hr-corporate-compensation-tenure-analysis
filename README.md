@@ -3,7 +3,7 @@
 Employee database analysis on organizational structure, department compensation, and employee retention/tenure using SQL and SQLite.
 
 ## Overview
-The goal of this project was to act as a Corporate Human Resources & People Ops Analyst to evaluate the overall scale, payroll structure, and tenure distribution across the company's workforce. By analyzing a public synthetic relational dataset found online of over 300,000 employees, this project helps corporate leadership and FP&A teams understand organizational scale, locate high/low compensation tiers, investigate potential legacy tenure bottlenecks, and implement structural database tools (VIEWs) to support real-time executive decision-making.
+The goal of this project was to act as a Corporate Human Resources & People Ops Analyst to evaluate the overall scale, payroll structure, and tenure distribution across the company's workforce. By analyzing a public relational dataset found online of over 300,000 synthetic employees, this project helps corporate leadership and FP&A teams understand organizational scale, locate high/low compensation tiers, investigate potential legacy tenure bottlenecks, and implement structural database tools (VIEWs) to support real-time executive decision-making.
 
 ---
 
