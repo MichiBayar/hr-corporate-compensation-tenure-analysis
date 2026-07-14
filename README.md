@@ -78,7 +78,7 @@ LIMIT 20;
 ### 4. Management Continuity Audit
 A critical governance and operational risk check was run to identify any department currently operating without a manager assigned to active records.
 
-Result: 0 departments currently lack an active manager. Every single business unit has a designated leader assigned on active record (to_date = '9999-01-01'), ensuring structural alignment.
+**Result:** 0 departments currently lack an active manager. Every single business unit has a designated leader assigned on active record (to_date = '9999-01-01'), ensuring structural alignment.
 
 <img width="171" height="69" alt="Screenshot 2026-07-14 at 11 45 42 PM" src="https://github.com/user-attachments/assets/ef7fde55-bc69-4016-a1aa-834b7266aa00" />
 
@@ -107,7 +107,7 @@ When breaking down long-tenured rates department-by-department, the analysis yie
 
 Rather than certain departments holding heavily skewed legacy populations, tenure is almost completely uniform across all the departments.
 
-**Strategic HR Interpretation:** Because legacy tenure is uniformly distributed around ~23.7% across every single functional business unit, length of service can be officially eliminated as a variable for departmental performance gaps or abnormal turnover spikes. If one department is losing talent faster than another, it is driven by local management practices, career progression bottlenecks, or compensation tiers rather than a retirement-heavy cohort structure.
+**Interpretation:** Because legacy tenure is uniformly distributed around ~23.7% across every single functional business unit, length of service can be officially eliminated as a variable for departmental performance gaps or abnormal turnover spikes. If one department is losing talent faster than another, it is driven by local management practices, career progression bottlenecks, or compensation tiers rather than a retirement-heavy cohort structure.
 
 ### Financial Spend & Compensation Tiers
 To help Corporate Finance standardize salary adjustments and control human capital spend, we compiled the departments into a structured pay-tier framework based on average salary profiles:
