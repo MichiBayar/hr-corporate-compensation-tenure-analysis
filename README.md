@@ -48,7 +48,7 @@ By joining active department records with active pay schedules, we mapped headco
 
 * **Strategic Finding:** Functional operational departments like Development (20,866 headcount) and Production (18,248 headcount) house the absolute largest portions of the company's workforce while staying highly cost-optimized near $67,700 averages.
 
-To download raw output: department_payroll_map.csv
+
 
 ### 3. Top Earning Employees
 To identify outliers and high-value individual contributors, active title and salary tables were joined to extract the top 20 highest-compensated individuals currently in the organization.
@@ -71,16 +71,16 @@ WHERE de.to_date = '9999-01-01'
 ORDER BY s.salary DESC
 LIMIT 20;
 ```
-* **Key Discovery:** The top-tier salary brackets are dominated by individuals holding Senior Staff and Manager titles within the Sales and Marketing divisions, hitting maximum thresholds above $140,000.
+**Key Discovery:** The top-tier salary brackets are dominated by individuals holding Senior Staff and Manager titles within the Sales and Marketing divisions, hitting maximum thresholds above $140,000.
 
-To download raw output: top_20_earners.csv
+<img width="425" height="506" alt="Screenshot 2026-07-14 at 11 45 29 PM" src="https://github.com/user-attachments/assets/778fa5e6-5d74-4e0a-b8c3-b0ed126d1ef6" />
 
 ### 4. Management Continuity Audit
 A critical governance and operational risk check was run to identify any department currently operating without a manager assigned to active records.
 
-Result: 0 departments currently lack an active manager. Every single business unit has an designated leader assigned on active record (to_date = '9999-01-01'), ensuring structural alignment.
+Result: 0 departments currently lack an active manager. Every single business unit has a designated leader assigned on active record (to_date = '9999-01-01'), ensuring structural alignment.
 
-To download raw output: manager_coverage_audit.csv
+<img width="171" height="69" alt="Screenshot 2026-07-14 at 11 45 42 PM" src="https://github.com/user-attachments/assets/ef7fde55-bc69-4016-a1aa-834b7266aa00" />
 
 ### 5. Evaluating the "Legacy Cohort" Retention Risk
 To test the hypothesis that specific departments are top-heavy with aging legacy talent, we defined "Long-Tenured" employees as any active staff member hired prior to January 1st, 1987.
@@ -94,7 +94,7 @@ FROM dept_emp AS de
 JOIN employees AS e ON de.emp_no = e.emp_no
 WHERE de.to_date = '9999-01-01';
 ```
-* **Result:** 23.79% of the company’s current active workforce is classified as highly long-tenured, representing 57,115 core veterans who have been with the company since 1986 or earlier.
+**Result:** 23.79% of the company’s current active workforce is classified as highly long-tenured, representing 57,115 core veterans who have been with the company since 1986 or earlier.
 
 To download raw output: long_tenured_workforce.csv
 
