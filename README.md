@@ -96,16 +96,10 @@ WHERE de.to_date = '9999-01-01';
 ```
 **Result:** 23.79% of the company’s current active workforce is classified as highly long-tenured, representing 57,115 core veterans who have been with the company since 1986 or earlier.
 
-To download raw output: long_tenured_workforce.csv
-
-### 
-Summary & Strategic HR Insights
-Departmental Tenure Homogeneity
-When breaking down long-tenured rates department-by-department, the analysis yielded a fascinating and unexpected pattern.
-
 <img width="577" height="245" alt="Screenshot 2026-07-14 at 11 46 20 PM" src="https://github.com/user-attachments/assets/e39027c1-526d-446f-9b1d-381c61733450" />
 
-Rather than certain departments holding heavily skewed legacy populations, tenure is almost completely uniform across all the departments.
+### Summary & Strategic HR Insights
+When breaking down long-tenured rates department-by-department, the data yielded an unexpected but disappointing bland pattern. Rather than certain departments holding heavily skewed legacy populations, tenure is almost completely uniform across all the departments.
 
 **Interpretation:** Because legacy tenure is uniformly distributed around ~23.7% across every single functional business unit, length of service can be officially eliminated as a variable for departmental performance gaps or abnormal turnover spikes. If one department is losing talent faster than another, it is driven by local management practices, career progression bottlenecks, or compensation tiers rather than a retirement-heavy cohort structure.
 
