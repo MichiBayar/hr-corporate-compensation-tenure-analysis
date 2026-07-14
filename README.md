@@ -123,7 +123,7 @@ WHERE de.to_date = '9999-01-01' AND s.to_date = '9999-01-01'
 GROUP BY d.dept_name
 ORDER BY [Average Salary] DESC;
 ```
-## The Compensation Hierarchy:
+#### The Compensation Hierarchy:
 * **High Pay Tier (>= $80,000):** Sales ($89,005.79)
 
 * **Medium Pay Tier ($67,000 - $79,999):** Marketing ($79,879.18), Finance ($78,075.46), Research ($68,134.69), Production ($67,772.53), Development ($67,729.76), Customer Service ($67,199.35)
