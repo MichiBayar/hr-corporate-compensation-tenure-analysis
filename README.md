@@ -35,26 +35,25 @@ To understand the baseline scale of the company's workforce, distinct aggregate 
 SELECT COUNT(DISTINCT emp_no) AS [Total Current Employees]
 FROM dept_emp
 WHERE to_date = '9999-01-01';
+```
 
-To download raw output: active_headcount.csv
-
-2. Department Headcount & Payroll Map
+### 2. Department Headcount & Payroll Map
 By joining active department records with active pay schedules, we mapped headcounts and average salaries to identify where corporate payroll capital is concentrated.
 
-(Place a bar chart screenshot here showing Sales at the top and HR at the bottom)
+<img width="422" height="482" alt="Screenshot 2026-07-14 at 11 45 10 PM" src="https://github.com/user-attachments/assets/30a3575d-7e11-44ae-8d54-999087fd461d" />
 
-Highest Paid Department: Sales averages $89,005.79 across 12,735 active employees.
+* **Highest Paid Department:** Sales averages $89,005.79 across 12,735 active employees.
 
-Lowest Paid Department: Human Resources averages $63,643.26 across 4,449 active employees.
+* **Lowest Paid Department:** Human Resources averages $63,643.26 across 4,449 active employees.
 
-Strategic Finding: Functional operational departments like Development (20,866 headcount) and Production (18,248 headcount) house the absolute largest portions of the company's workforce while staying highly cost-optimized near $67,700 averages.
+* **Strategic Finding:** Functional operational departments like Development (20,866 headcount) and Production (18,248 headcount) house the absolute largest portions of the company's workforce while staying highly cost-optimized near $67,700 averages.
 
 To download raw output: department_payroll_map.csv
 
 3. Top Earning Employees
 To identify outliers and high-value individual contributors, active title and salary tables were joined to extract the top 20 highest-compensated individuals currently in the organization.
 
-SQL
+```sql
 SELECT
 	e.first_name,
 	e.last_name,
@@ -71,6 +70,7 @@ WHERE de.to_date = '9999-01-01'
   AND s.to_date = '9999-01-01'
 ORDER BY s.salary DESC
 LIMIT 20;
+```
 Key Discovery: The top-tier salary brackets are dominated by individuals holding Senior Staff and Manager titles within the Sales and Marketing divisions, hitting maximum thresholds above $140,000.
 
 To download raw output: top_20_earners.csv
