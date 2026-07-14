@@ -3,7 +3,7 @@
 Employee database analysis on organizational structure, department compensation, and employee retention/tenure using SQL and SQLite.
 
 ## Overview
-The goal of this project was to act as a HR/People Analytics exercise, and this project starts from the question of if I were handed this workforce dataset, what would an HR or FP&A team want to know first? By analyzing a public relational dataset found online of over 300,000 synthetic employees, the queries below follow that logic, starting from org-wide scale, narrowing into payroll concentration and outliers, checking structural/governance health, and finally testing a specific retention hypothesis.
+The goal of this project was to act as a HR/People Analytics exercise, and this project starts from the question of if I were handed this workforce dataset, what would an HR or FP&A team want to know first. By analyzing a public relational dataset found online of over 300,000 synthetic employees, the queries below follow that logic, starting from org-wide scale, narrowing into payroll concentration and outliers, checking structural/governance health, and finally testing a specific retention hypothesis.
 
 ---
 
